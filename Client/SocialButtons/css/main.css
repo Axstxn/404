@@ -1,0 +1,48 @@
+
+#shit {
+    font-size: 100px;
+}
+.center {
+    display: table;
+    width: 100%;
+    height: 100vh;
+}
+
+#social-test {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 30px;
+    h2 {
+        color: #fff;
+        font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+        font-weight: 100;
+    }
+    .social {
+        padding-left: 0;
+    }
+    li {
+        color: rgba(167, 146, 129, 0.6);
+        list-style-type: none;
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        padding: 1%;
+        border: 1px solid rgba(167, 146, 129, 0.4);
+        cursor: pointer;
+        margin-left: 10px;
+        margin-bottom: 20px;
+        transition: ease 0.3s;
+        &:hover {
+            color: rgba(167, 146, 129, 1);
+            border: 1px solid rgba(167, 146, 129, 1);
+        }
+    }
+}
+.social:hover > li {
+    opacity: 0.5;
+}
+.social:hover > li:hover {
+    opacity: 1;
+}
