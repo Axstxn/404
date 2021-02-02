@@ -1,5 +1,6 @@
 font-size: 100px;
 position: center;
 top: 400px;
+text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
 left: 650px;
 animation: rainbow-text 10s infinite;
