@@ -1,0 +1,67 @@
+<style>
+  .col {
+    margin-top: 12px;
+    display: inline-block;
+    position: relative;
+  }
+  .textbox {
+    padding: 2px 0;
+    font: 13px/24px Lato, Arial, sans-serif;
+    color: #fff;
+    width: 275px;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 0;
+    border: 1px solid transparent;
+    border-bottom-color: #ccc;
+    transition: 0.4s;
+    background-color: transparent;
+  }
+  .textbox ~ .focus-border {
+    position: absolute;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.4s;
+    z-index: -1;
+    background-color: transparent;
+  }
+  .textbox:focus ~ .focus-border {
+    transition: 0.4s;
+    height: 30px;
+    border: 2px solid #39F;
+    z-index: 1;
+    background-color: transparent;
+  }
+  .textbox:focus {
+    outline: 0;
+    padding: 2px 14px;
+    transition: 0.4s;
+    background-color: transparent;
+  }
+</style>
+
+<br />
+<br />
+<br />
+<br />
+<h3>Log-In</h3>
+<div class="col">
+  <input id="LoginName" class="textbox" placeholder="Name" />
+  <span class="focus-border"></span>
+</div>
+<br />
+<br />
+<div class="col">
+  <input
+    type="password"
+    id="LoginPassword"
+    class="textbox"
+    placeholder="password"
+  />
+  <span class="focus-border"></span>
+</div>
+<br />
+<br />
+<div class="button3" id="LoginButtonConfirm">Log-in</div>
