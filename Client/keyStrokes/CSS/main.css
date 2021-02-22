@@ -1,0 +1,125 @@
+
+h2 {
+  text-align: center;
+  position: absolute;
+  font-family: verdana;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: -8;
+  left: 0;
+  background: linear-gradient(268deg, #fd0202, #e1fd02, #30fd02, #02fdf4, #3402fd, #fd02f4, #fd020b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+    background-size: 1400% 1400%;
+
+    -webkit-animation: gradient 30s ease infinite;
+    -moz-animation: gradient 30s ease infinite;
+    -o-animation: gradient 30s ease infinite;
+    animation: gradient 30s ease infinite;
+
+
+}
+@-webkit-keyframes gradient {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-moz-keyframes gradient {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@-o-keyframes gradient {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+@keyframes gradient {
+    0%{background-position:0% 57%}
+    50%{background-position:100% 44%}
+    100%{background-position:0% 57%}
+}
+.key-display {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.25);
+  color: white;
+  font-family: verdana;
+  font-size: 30px;
+  overflow: hidden;
+  min-width: 55px;
+  min-height: 45px;
+  padding: 15px;
+  pointer-events: none;
+  text-align: center;
+  transition: all 130ms linear;
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.43);
+}
+
+.ripple {
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: rippleEffect 600ms linear;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  tranform: translate(-50%, -50%);
+  -webkit-animation-fill-mode: forwards; 
+  -moz-animation-fill-mode: forwards;  
+  -o-animation-fill-mode: forwards;     
+  -ms-animation-fill-mode: forwards;    
+  animation-fill-mode: forwards;
+}
+
+@keyframes rippleEffect {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes ee {
+  0% {
+    background: white;
+  }
+  10% {
+    background: grey;
+  }
+  20% {
+    background: cornflowerblue;
+  }
+  30% {
+    background: blue;
+  }
+  40% {
+    background: purple;
+  }
+  50% {
+    background: violet;
+  }
+  60% {
+    background: red;
+  }
+  70% {
+    background: orange;
+  }
+  80% {
+    background: yellow;
+  }
+  90% {
+    background: white;
+  }
+}
